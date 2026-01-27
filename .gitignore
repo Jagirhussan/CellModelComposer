@@ -1,0 +1,21 @@
+#Python
+pycache/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+#Node/Frontend
+node_modules/
+dist/
+.DS_Store
+.log
+npm-debug.log
+
+#IDEs
+.vscode/
+.idea/
+
+#Local Data
+*.local.json
+/data/logs/

@@ -1,0 +1,25 @@
+{
+  "llm_models": {
+    "annotation": "gemini-3.0-pro",
+    "planning": "gemini-3.0-pro",
+    "coding": "gemini-3.0-flash",
+    "research": "gemini-3.0-pro"
+  },
+  "rate_limits": {
+    "gemini-3.0-pro": { "rpm": 2, "tpm": 125000, "rpd": 50 },
+    "gemini-3.0-flash": { "rpm": 10, "tpm": 250000, "rpd": 250 },
+    "gemini-3.0-flash-lite": { "rpm": 15, "tpm": 250000, "rpd": 1000 },
+    "gemini-2.0-flash": { "rpm": 15, "tpm": 1000000, "rpd": 200 },
+    "gemini-2.0-flash-lite": { "rpm": 30, "tpm": 1000000, "rpd": 200 },
+    "default": { "rpm": 15, "tpm": 250000, "rpd": 1000 }
+  },
+  "paths": {
+    "data_dir": "FCUComposer/data",
+    "registry_file": "FCUComposer/data/library_registry.json",
+    "cache_file": "FCUComposer/genai_cache.json",
+    "log_file": "FCUComposer/llm_interaction.log"
+  },
+  "ingestion": {
+    "context_window_equations": 30
+  }
+}
